@@ -13,4 +13,21 @@ def main():
     print(f"The largest number is {round(max(numbers))}")
     print(f"The average of the numbers is {sum(numbers) / len(numbers):.1f}")  # Average with one decimal place
 
+    def main():
+        usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45',
+                     'BaseInterpreterInterface', 'BaseStdIn', 'Command', 'ExecState',
+                     'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+
+        # Ask the user for their username
+        user_input = input("Enter your username: ")
+
+        # Check if the username is in the list
+        if user_input in usernames:
+            print("Access granted")
+        else:
+            print("Access denied")
+
+    main()
+
+
 main()
