@@ -1,6 +1,7 @@
 # Get user input
 text = input("Text: ")
 
+
 # Split the text into words
 words = text.split()
 
@@ -14,6 +15,10 @@ for word in words:
     else:
         word_counts[word] = 1
 
-# Sort words alphabetically and print results
+# Find the longest word for alignment
+max_length = max(len(word) for word in word_counts)
+
+# Sort words alphabetically and print results with alignment
 for word in sorted(word_counts):
-    print(f"{word} : {word_counts[word]}")
+    print(f"{word:<{max_length}} : {word_counts[word]}")
+
